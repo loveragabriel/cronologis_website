@@ -9,11 +9,11 @@ import { Footer } from './components/Footer';
 function App() {
   return (
     <div className="">
-      <NavBar/>
-      <BoxTextHome/>
-      <TapeServices/>
-      <WhatWeDo/>
-      <ContactForm/>
+      <NavBar />
+      <BoxTextHome />
+      <TapeServices />
+      <WhatWeDo />
+      <ContactForm />
       <Footer></Footer>
     </div>
   );

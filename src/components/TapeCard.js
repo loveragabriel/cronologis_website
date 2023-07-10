@@ -15,6 +15,7 @@ export default function TapeCard(prop) {
                     textAlign:'center',
                     padding:'0.5em',
                     color:'white',
+                    cursor: 'pointer',
                     '&:hover': {
                         backgroundColor: 'primary.main',
                         opacity: [0.9, 0.8, 0.7],

@@ -9,7 +9,7 @@ export default function TapeServices(prop) {
     return (
         <React.Fragment>
             <CssBaseline />
-            <Container maxWidth="100%" sx={{ bgcolor: '#221133', display: 'flex', marginTop: '5em' }}>
+            <Container maxWidth="100%" sx={{ bgcolor: '#221133', display: 'flex', marginTop: '5em', flexWrap: 'wrap' }}>
                 {services3.map((Ser) => {
                     return <TapeCard TapeServices={Ser} />
                 })}
