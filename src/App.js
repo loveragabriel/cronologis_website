@@ -1,8 +1,10 @@
 import './App.css';
 import NavBar from './components/NavBar';
-import PplPage from './components/ContainerPpl';
 import BoxTextHome from './components/BoxTexHome';
+import WhatWeDo from './components/WhatWeDo';
 import TapeServices from './components/TapeServices';
+import { ContactForm } from './components/ContactForm';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
       <NavBar/>
       <BoxTextHome/>
       <TapeServices/>
-      <PplPage></PplPage>
+      <WhatWeDo/>
+      <ContactForm/>
+      <Footer></Footer>
     </div>
   );
 }
