@@ -30,11 +30,12 @@ const inputsForm = [
 
 export default function ContactForm (){
     return (
-        <Container sx={{ textAlign: 'center', margin: '3em' }}>
-            <Typography variant='h3' >Contacto</Typography>
+            <Box sx={{ display:'flex'}} >
+        <Container >
+            <Typography variant='h4' sx={{ marginTop: '3em', textAlign:'center'}}>Contacto</Typography>
             <Box
                 sx={{
-                    marginTop: '5em',
+                    marginTop: '1em',
                     display: 'flex',
                     justifyContent: 'center',
 
@@ -44,7 +45,7 @@ export default function ContactForm (){
                 }}
             >
 
-                <Paper elevation={3} sx={{ display: 'flex', flexDirection: 'column' }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                     {
                         inputsForm.map((input) => {
                             return <TextField sx={{ margin: '1em', display: 'flex', justifyItems: 'center' }} id="outlined-basic" label={input} variant="outlined" />
@@ -67,8 +68,9 @@ export default function ContactForm (){
                     </TextField>
                     <Button>Enviar</Button>
 
-                </Paper>
+                </Box>
             </Box>
         </Container>
+        </Box>
     )
 }

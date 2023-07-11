@@ -5,6 +5,7 @@ import WhatWeDo from './components/WhatWeDo';
 import TapeServices from './components/TapeServices';
 import ContactForm  from './components/ContactForm';
 import { Footer } from './components/Footer';
+import CardServices from './components/CardServices';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <BoxTextHome />
       <TapeServices />
       <WhatWeDo />
+      <CardServices/>
       <ContactForm />
       <Footer></Footer>
     </div>

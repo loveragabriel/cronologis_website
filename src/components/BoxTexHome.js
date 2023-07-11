@@ -6,7 +6,7 @@ import { Typography } from '@mui/material';
 export default function BoxTextHome() {
     return (
         <React.Fragment>
-            <Container maxWidth="lg" sx={{height:'60vh'}}>
+            <Container maxWidth="lg" sx={{ height: '60vh' }}>
                 <Typography variant='h1' sx={{ fontSize: '2.5707rem', textAlign: 'center', paddingTop: '3rem' }}>
                     ¡Seguimiento de Importación desde origen!
                 </Typography>
