@@ -28,7 +28,7 @@ const inputsForm = [
 
 
 
-export const ContactForm = () => {
+export default function ContactForm (){
     return (
         <Container sx={{ textAlign: 'center', margin: '3em' }}>
             <Typography variant='h3' >Contacto</Typography>
@@ -68,9 +68,7 @@ export const ContactForm = () => {
                     <Button>Enviar</Button>
 
                 </Paper>
-
             </Box>
-
         </Container>
     )
 }
