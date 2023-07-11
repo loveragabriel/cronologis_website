@@ -2,6 +2,7 @@ import * as React from 'react';
 import Container from '@mui/material/Container';
 import { Typography } from '@mui/material';
 
+//Main box on the landing page
 export default function BoxTextHome() {
     return (
         <React.Fragment>
