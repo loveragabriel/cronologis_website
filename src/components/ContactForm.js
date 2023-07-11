@@ -1,5 +1,5 @@
 import React from 'react'
-import { Paper, Box, TextField } from '@mui/material'
+import { Paper, Box, TextField, Typography, Button, Container } from '@mui/material'
 import MenuItem from '@mui/material/MenuItem';
 
 
@@ -30,26 +30,24 @@ const inputsForm = [
 
 export const ContactForm = () => {
     return (
-        <div>
+        <Container sx={{ textAlign: 'center', margin: '3em' }}>
+            <Typography variant='h3' >Contacto</Typography>
             <Box
                 sx={{
                     marginTop: '5em',
                     display: 'flex',
                     justifyContent: 'center',
-                    flexWrap: 'wrap',
 
                     '& > :not(style)': {
                         m: 1,
-                        width: 128,
-                        height: 128,
                     },
                 }}
             >
 
-                <Paper elevation={3}>
+                <Paper elevation={3} sx={{ display: 'flex', flexDirection: 'column' }}>
                     {
                         inputsForm.map((input) => {
-                            return <TextField sx={{ padding: '1em' }} id="outlined-basic" label={input} variant="outlined" />
+                            return <TextField sx={{ margin: '1em', display: 'flex', justifyItems: 'center' }} id="outlined-basic" label={input} variant="outlined" />
 
                         })
                     }
@@ -59,16 +57,20 @@ export const ContactForm = () => {
                         label="Servicios"
                         defaultValue="Consulta"
                         helperText="Por favor selecciona una opción"
+                        sx={{ margin: '1em' }}
                     >
                         {services.map((option) => (
-                            <MenuItem key={option.value} value={option.value}>
+                            <MenuItem key={option.value} value={option.value} >
                                 {option.label}
                             </MenuItem>
                         ))}
                     </TextField>
+                    <Button>Enviar</Button>
+
                 </Paper>
+
             </Box>
 
-        </div>
+        </Container>
     )
 }
