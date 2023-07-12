@@ -26,8 +26,6 @@ const inputsForm = [
     'Nombre', 'Empresa', 'Correo'
 ]
 
-
-
 export default function ContactForm (){
     return (
             <Box sx={{ display:'flex'}} >
