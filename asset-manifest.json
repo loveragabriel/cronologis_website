@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/cronologis_website/static/css/main.374fafea.css",
-    "main.js": "/cronologis_website/static/js/main.ff70fa87.js",
+    "main.js": "/cronologis_website/static/js/main.f97ea469.js",
     "static/js/787.5ddc8af6.chunk.js": "/cronologis_website/static/js/787.5ddc8af6.chunk.js",
     "static/media/vessel.jpg": "/cronologis_website/static/media/vessel.474b0930fef30deadf5e.jpg",
     "static/media/Cronologis.svg": "/cronologis_website/static/media/Cronologis.11cd186277406e8674587dae19a17a3b.svg",
     "index.html": "/cronologis_website/index.html",
     "main.374fafea.css.map": "/cronologis_website/static/css/main.374fafea.css.map",
-    "main.ff70fa87.js.map": "/cronologis_website/static/js/main.ff70fa87.js.map",
+    "main.f97ea469.js.map": "/cronologis_website/static/js/main.f97ea469.js.map",
     "787.5ddc8af6.chunk.js.map": "/cronologis_website/static/js/787.5ddc8af6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.374fafea.css",
-    "static/js/main.ff70fa87.js"
+    "static/js/main.f97ea469.js"
   ]
 }
