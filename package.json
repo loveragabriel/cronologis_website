@@ -1,7 +1,7 @@
 {
   "name": "crono",
   "version": "0.1.0",
-  "home": "https://loveragabriel.io/cronologis_website",
+  "homepage": "https://loveragabriel.io/cronologis_website",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
