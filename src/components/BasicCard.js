@@ -9,24 +9,20 @@ import Typography from '@mui/material/Typography';
 
 export default function BasicCard(props) {
   return (
-    <Card sx={{ minWidth:275 }}>
+    <Card id='cardServices'  sx={{ minWidth:275, cursor:'pointer', '&:hover':  {
+      background:'#0c2441', 
+      color:'white'
+    } }}>
       <CardContent>
-        {/* <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-        </Typography> */}
-        <Typography variant="h5" component="div">
+        <Typography variant="h4" component="div" sx={{color:'#FF5733'}}>
         {props.title}
         </Typography>
-        {/* <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          adjective
-        </Typography> */}
-        <Typography variant="body2">
+        <Typography variant="body1" sx={{fontSize:'1.3em'}}>
           {props.text}
-          <br />
-          {'"a benevolent smile"'}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">{props.link}</Button>
+      <CardActions sx={{position:'relative', bottom:'0'}}>
+        <Button size="small" href='#contact' >Más Info..</Button>
       </CardActions>
     </Card>
   );

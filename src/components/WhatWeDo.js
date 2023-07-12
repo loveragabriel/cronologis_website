@@ -5,7 +5,7 @@ export default function WhatWeDo() {
     return (
         <Fragment sx={{ display:'flex', justifyContent:'center', marginTop: '5em' }}>
         <Container >
-            <Typography variant="h4" sx={{ color: '#FF5733', textAlign: 'center', fontWeight: '700', marginBottom: '3em' }}>
+            <Typography variant="h4" sx={{ color: '#FF5733', textAlign:'center', fontWeight: '700', marginBottom: '3em', marginTop: '3em'  }}>
                 ¿Qué Hacemos?
             </Typography>
             <Typography variant="h2" sx={{ fontSize: '2.5rem', textAlign: 'center' }}>

@@ -28,7 +28,7 @@ const inputsForm = [
 
 export default function ContactForm (){
     return (
-            <Box sx={{ display:'flex'}} >
+            <Box sx={{ display:'flex'}} id='contact' >
         <Container >
             <Typography variant='h4' sx={{ marginTop: '3em', textAlign:'center'}}>Contacto</Typography>
             <Box

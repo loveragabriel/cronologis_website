@@ -22,9 +22,18 @@ export default function TapeCard(prop) {
                     },
                 }}
             >
-                <Typography>
+                <a
+          href="#cardServices"
+          sx={{
+            textDecoration: 'none',
+            color: 'white',
+            '&:hover': {
+              textDecoration: 'none'
+            }
+          }}
+        >
                     {prop.TapeServices}
-                </Typography>
+                </a>
             </Box>
         </Fragment>
     )
