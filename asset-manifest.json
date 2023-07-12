@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.374fafea.css",
-    "main.js": "/static/js/main.92acfc59.js",
-    "static/js/787.5ddc8af6.chunk.js": "/static/js/787.5ddc8af6.chunk.js",
-    "static/media/vessel.jpg": "/static/media/vessel.474b0930fef30deadf5e.jpg",
-    "static/media/Cronologis.svg": "/static/media/Cronologis.11cd186277406e8674587dae19a17a3b.svg",
-    "index.html": "/index.html",
-    "main.374fafea.css.map": "/static/css/main.374fafea.css.map",
-    "main.92acfc59.js.map": "/static/js/main.92acfc59.js.map",
-    "787.5ddc8af6.chunk.js.map": "/static/js/787.5ddc8af6.chunk.js.map"
+    "main.css": "/cronologis_website/static/css/main.374fafea.css",
+    "main.js": "/cronologis_website/static/js/main.ff70fa87.js",
+    "static/js/787.5ddc8af6.chunk.js": "/cronologis_website/static/js/787.5ddc8af6.chunk.js",
+    "static/media/vessel.jpg": "/cronologis_website/static/media/vessel.474b0930fef30deadf5e.jpg",
+    "static/media/Cronologis.svg": "/cronologis_website/static/media/Cronologis.11cd186277406e8674587dae19a17a3b.svg",
+    "index.html": "/cronologis_website/index.html",
+    "main.374fafea.css.map": "/cronologis_website/static/css/main.374fafea.css.map",
+    "main.ff70fa87.js.map": "/cronologis_website/static/js/main.ff70fa87.js.map",
+    "787.5ddc8af6.chunk.js.map": "/cronologis_website/static/js/787.5ddc8af6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.374fafea.css",
-    "static/js/main.92acfc59.js"
+    "static/js/main.ff70fa87.js"
   ]
 }
