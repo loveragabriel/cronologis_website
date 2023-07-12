@@ -19,7 +19,6 @@ export default function TapeServices(prop) {
         maxWidth="xl"
         sx={{
           bgcolor: '#221133',
-          marginTop: '5em',
           display: 'flex',
           justifyContent: 'center',
           flexWrap: 'wrap',

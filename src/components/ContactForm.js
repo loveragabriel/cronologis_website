@@ -1,5 +1,5 @@
 import React from 'react'
-import { Paper, Box, TextField, Typography, Button, Container } from '@mui/material'
+import { Box, TextField, Typography, Button, Container } from '@mui/material'
 import MenuItem from '@mui/material/MenuItem';
 
 
@@ -23,7 +23,7 @@ const services = [
 ];
 
 const inputsForm = [
-    'Nombre', 'Empresa', 'Correo'
+    'Nombre de Contacto', 'Empresa', 'Correo'
 ]
 
 export default function ContactForm (){
