@@ -29,7 +29,7 @@ export default function BoxTextHome() {
             alignItems: 'center',
             justifyContent: 'center',
             textAlign: 'center',
-            paddingTop: '3rem'
+            paddingTop: '3rem',
           }}
         >
         </Container>

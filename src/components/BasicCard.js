@@ -14,10 +14,10 @@ export default function BasicCard(props) {
       color:'white'
     } }}>
       <CardContent>
-        <Typography variant="h4" component="div" sx={{color:'#FF5733'}}>
+        <Typography variant="h5" component="div" sx={{color:'#FF5733'}}>
         {props.title}
         </Typography>
-        <Typography variant="body1" sx={{fontSize:'1.3em'}}>
+        <Typography variant="body1" sx={{fontSize:'1em'}}>
           {props.text}
         </Typography>
       </CardContent>

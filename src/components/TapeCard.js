@@ -1,20 +1,20 @@
 import React, { Fragment } from 'react'
 import { Box } from '@mui/material';
-import { Typography } from '@mui/material';
+import Link from '@mui/material/Link/Link';
 
 export default function TapeCard(prop) {
     return (
         <Fragment>
             <Box
                 sx={{
-                    display:'flex',
+                    display: 'flex',
                     width: 300,
                     height: 100,
-                    alignItems:'center',
+                    alignItems: 'center',
                     justifyContent: 'center',
-                    textAlign:'center',
-                    padding:'0.5em',
-                    color:'white',
+                    textAlign: 'center',
+                    padding: '0.4em',
+                    color: 'white',
                     cursor: 'pointer',
                     '&:hover': {
                         backgroundColor: 'primary.main',
@@ -22,18 +22,10 @@ export default function TapeCard(prop) {
                     },
                 }}
             >
-                <a
-          href="#cardServices"
-          sx={{
-            textDecoration: 'none',
-            color: 'white',
-            '&:hover': {
-              textDecoration: 'none'
-            }
-          }}
-        >
-                    {prop.TapeServices}
-                </a>
+                  <Link href='#cardServices' sx={{ color: 'white', textDecoration: 'none' }}>
+                  {prop.TapeServices}
+            </Link>
+
             </Box>
         </Fragment>
     )

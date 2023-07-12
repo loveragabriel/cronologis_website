@@ -26,7 +26,7 @@ function NavBar() {
 
           {/* BOX RIGHT SIDE */}
           <Box sx={{ flexGrow: 0, }}>
-            <Link href='/' sx={{ color: 'white', textDecoration: 'none' }}>
+            <Link href='#contact' sx={{ color: 'white', textDecoration: 'none' }}>
               Contacto
             </Link>
           </Box>
