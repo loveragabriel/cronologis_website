@@ -9,15 +9,16 @@ import Typography from '@mui/material/Typography';
 
 export default function BasicCard(props) {
   return (
-    <Card id='cardServices'  sx={{ minWidth:275, cursor:'pointer', '&:hover':  {
+    <Card id='cardServices'  sx={{  minWidth: '200px', cursor:'pointer',  margin:'2em',
+    '&:hover':  {
       background:'#0c2441', 
       color:'white'
     } }}>
       <CardContent>
-        <Typography variant="h5" component="div" sx={{color:'#FF5733'}}>
+        <Typography variant="h5"   component="div" sx={{color:'#FF5733',    overflowWrap: 'break-word'}}>
         {props.title}
         </Typography>
-        <Typography variant="body1" sx={{fontSize:'1em'}}>
+        <Typography variant="body1" sx={{fontSize:'1.1em'}}>
           {props.text}
         </Typography>
       </CardContent>
