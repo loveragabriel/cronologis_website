@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
 import { Box, TextField, Typography, Button, Container } from '@mui/material';
 import MenuItem from '@mui/material/MenuItem';
+import emailjs from '@emailjs/browser';
+
+const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+const userId = process.env.REACT_APP_EMAILJS_USER_ID;
+
+console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
+console.log(process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
+console.log(process.env.REACT_APP_EMAILJS_USER_ID);
 
 const services = [
   {
@@ -39,19 +48,31 @@ export default function ContactForm() {
     }));
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Perform form submission or validation here
-    console.log(formData); // Display the form data in the console
-    // Reset the form after submission if needed
-    setFormData({
-        Correo: '',
-        Empresa: '',
-        'Nombre de Contacto': '',
-        service: '',
-        comments: '',
-    });
+  const sendEmail = (e ) => {
+    e.preventDefault();
+    
+
+    emailjs.sendForm(serviceId, templateId, e.target, userId)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
   };
+
+//   const handleSubmit = (event) => {
+//     event.preventDefault();
+//     // Perform form submission or validation here
+//     console.log(formData); // Display the form data in the console
+//     // Reset the form after submission if needed
+//     setFormData({
+//         Correo: '',
+//         Empresa: '',
+//         'Nombre de Contacto': '',
+//         service: '',
+//         comments: '',
+//     });
+//   };
 
   return (
     <Box id="contact">
@@ -69,7 +90,7 @@ export default function ContactForm() {
               m: 1,
             },
           }}
-          onSubmit={handleSubmit}
+          onSubmit={sendEmail}
         >
           <Box sx={{ display: 'flex', flexDirection: 'column' }}>
             {inputsForm.map((input) => (

@@ -6,6 +6,7 @@ import TapeServices from './components/TapeServices';
 import ContactForm  from './components/ContactForm';
 import { Footer } from './components/Footer';
 import CardServices from './components/CardServices';
+import 'dotenv/config'
 
 function App() {
   return (
