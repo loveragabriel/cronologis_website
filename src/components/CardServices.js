@@ -27,12 +27,7 @@ export default function CardServices(props) {
     >
       {serviceBox.map((data) => (
         <BasicCard title={data.title} text={data.definition} key={data.title}
-        sx={{
-          minWidth: '200px', // Add the desired minWidth value
-          '&:not(:last-child)': {
-            marginRight: '1em' // Add spacing between cards (optional)
-          }
-        }} />
+         />
       ))}
     </Container>
   );

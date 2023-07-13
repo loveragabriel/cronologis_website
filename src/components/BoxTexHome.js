@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Container from '@mui/material/Container';
-import { Typography } from '@mui/material';
 import vessel from './vessel.jpg';
 import { ComponentText } from './ComponentText';
 
@@ -35,7 +34,6 @@ export default function BoxTextHome() {
         </Container>
       </div>
       <ComponentText></ComponentText>
-
     </React.Fragment>
   );
 }
