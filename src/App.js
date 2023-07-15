@@ -6,6 +6,7 @@ import TapeServices from './components/TapeServices';
 import ContactForm  from './components/ContactForm';
 import { Footer } from './components/Footer';
 import CardServices from './components/CardServices';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 
 function App() {
@@ -17,7 +18,9 @@ function App() {
       <WhatWeDo />
       <CardServices/>
       <ContactForm />
+      <ScrollToTopButton/>
       <Footer></Footer>
+
     </div>
   );
 }
