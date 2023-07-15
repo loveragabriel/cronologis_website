@@ -22,9 +22,9 @@ export default function TapeCard(prop) {
                     },
                 }}
             >
-                  <Link href='#cardServices' sx={{ color: 'white', textDecoration: 'none' }}>
-                  {prop.TapeServices}
-            </Link>
+                <Link href='#cardServices' sx={{ color: 'white', textDecoration: 'none' }}>
+                    {prop.TapeServices}
+                </Link>
 
             </Box>
         </Fragment>

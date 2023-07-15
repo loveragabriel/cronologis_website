@@ -7,10 +7,6 @@ const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
 const userId = process.env.REACT_APP_EMAILJS_USER_ID;
 
-console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
-console.log(process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
-console.log(process.env.REACT_APP_EMAILJS_USER_ID);
-
 const services = [
   {
     value: 'ControlDocumental',
@@ -30,18 +26,20 @@ const services = [
   },
 ];
 
-const inputsForm = ['Nombre de Contacto', 'Empresa', 'Correo'];
+const inputsForm = ['Nombre', 'Empresa', 'Correo', ];
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     Correo: '',
     Empresa: '',
-    'Nombre de Contacto': '',
+    Nombre: '',
     service: '',
     comments: '',
   });
 
   const handleChange = (event) => {
+ 
+    
     setFormData((prevFormData) => ({
       ...prevFormData,
       [event.target.name]: event.target.value,
@@ -50,30 +48,36 @@ export default function ContactForm() {
 
   const sendEmail = (e ) => {
     e.preventDefault();
-    
 
-    emailjs.sendForm(serviceId, templateId, e.target, userId)
-      .then((result) => {
+    const { name, value } = e.target;
+
+
+    if (name === 'Correo') {
+      const emailRegex = /^\S+@\S+\.\S+$/;
+      if (!emailRegex.test(value)) {
+        return         alert('Email no valido')
+      } else {
+          emailjs
+        .sendForm(serviceId, templateId, e.target, userId)
+        .then((result) => {
           console.log(result.text);
-      }, (error) => {
+          // Reset the form after successful submission if needed
+          setFormData({
+            Correo: '',
+            Empresa: '',
+            Nombre: '',
+            service: '',
+            comments: '',
+          });
+        })
+        .catch((error) => {
           console.log(error.text);
-      });
-  };
-
-//   const handleSubmit = (event) => {
-//     event.preventDefault();
-//     // Perform form submission or validation here
-//     console.log(formData); // Display the form data in the console
-//     // Reset the form after submission if needed
-//     setFormData({
-//         Correo: '',
-//         Empresa: '',
-//         'Nombre de Contacto': '',
-//         service: '',
-//         comments: '',
-//     });
-//   };
-
+        });
+    
+        }
+      }
+    } 
+    
   return (
     <Box id="contact">
       <Container>

@@ -10,12 +10,12 @@ function NavBar() {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl" sx={{ background: '#071829' }}>
+      <Container width='xl' sx={{ background: '#071829' }}>
         <Toolbar disableGutters>
           {/* BOX MOBILE BAR */}
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
 
-            <img src={Cronologis} alt='logo' maxWidth={50} />
+            <img src={Cronologis} alt='logo' width={110} />
 
           </Box>
 

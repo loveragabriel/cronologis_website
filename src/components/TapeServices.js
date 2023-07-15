@@ -16,7 +16,7 @@ export default function TapeServices(prop) {
     <React.Fragment>
       <CssBaseline />
       <Container
-        maxWidth="xl"
+        width="xl"
         sx={{
           bgcolor: '#221133',
           display: 'flex',

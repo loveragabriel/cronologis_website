@@ -2,12 +2,13 @@ import * as React from 'react';
 import Container from '@mui/material/Container';
 import vessel from './vessel.jpg';
 import { ComponentText } from './ComponentText';
+import { Box } from '@mui/material';
 
 // Main box on the landing page
 export default function BoxTextHome() {
   return (
     <React.Fragment>
-      <div
+      <Container
         style={{
           position: 'relative',
           backgroundImage: `url(${vessel})`,
@@ -17,8 +18,7 @@ export default function BoxTextHome() {
           filter: 'brightness(30%)' // Add the desired filter effect here
         }}
       >
-        <Container
-          maxWidth="lg"
+        <Box
           style={{
             position: 'relative',
             zIndex: 1,
@@ -31,8 +31,8 @@ export default function BoxTextHome() {
             paddingTop: '3rem',
           }}
         >
-        </Container>
-      </div>
+        </Box>
+      </Container>
       <ComponentText></ComponentText>
     </React.Fragment>
   );
