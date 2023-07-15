@@ -8,7 +8,7 @@ import { Box } from '@mui/material';
 export default function BoxTextHome() {
   return (
     <React.Fragment>
-      <Container
+      <Container maxWidth='lx'
         style={{
           position: 'relative',
           backgroundImage: `url(${vessel})`,

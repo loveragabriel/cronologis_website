@@ -19,6 +19,7 @@ export default function TapeCard(prop) {
                     '&:hover': {
                         backgroundColor: 'primary.main',
                         opacity: [0.9, 0.8, 0.7],
+                        transition: 'all 1s ease-out'
                     },
                 }}
             >

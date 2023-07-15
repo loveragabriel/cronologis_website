@@ -10,7 +10,7 @@ function NavBar() {
 
   return (
     <AppBar position="static">
-      <Container width='xl' sx={{ background: '#071829' }}>
+      <Container maxWidth='xl' sx={{ background: '#071829' }}>
         <Toolbar disableGutters>
           {/* BOX MOBILE BAR */}
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

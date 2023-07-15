@@ -11,7 +11,7 @@ export default function WhatWeDo() {
             <Typography variant="h2" sx={{ fontSize: '2.5rem', textAlign: 'center' }}>
             Facilitamos el flujo de tus embarque de importación, atendiendo los procesos claves de cada coordinación.
             </Typography>
-            <Typography variant="h5" sx={{ opacity: '0.7', textAlign: 'center' }}>
+            <Typography variant="h5" sx={{ opacity: '0.7', textAlign: 'center', margin:'0.8em' }}>
                 Nos encargamos de asegurar una correcta emisión de documentación y del seguimiento del tránsito para lograr un despacho de mercadería en los tiempos estimados.
             </Typography>
         </Container>
