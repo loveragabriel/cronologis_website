@@ -163,8 +163,8 @@ export default function ContactForm() {
             <Button type="submit">Enviar</Button>
           </Box>
         </Box>
+        {displayAlert && (<SubmitAlert />)}
       </Container>
-      {displayAlert && (<SubmitAlert />)}
     </Box>
   );
 }
